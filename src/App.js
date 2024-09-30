@@ -26,10 +26,10 @@ function App() {
         users.map(user => (
           <li className='li_class' onClick={hanndleClick} key={user.id}>{user.name}
           <div className='hidden div_class'>
-            <p>{user.address.city}</p>
-            <p>{user.address.street}</p>
-            <p>{user.email}</p>
-            <p>{user.phone}</p>
+            <p>Город: {user.address.city}</p>
+            <p>Улица: {user.address.street}</p>
+            <p>Почта: {user.email}</p>
+            <p>Телефон: {user.phone}</p>
           </div>
           </li>
         ))
